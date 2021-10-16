@@ -1,0 +1,56 @@
+body {
+    padding-top: 100px;
+    padding-left: 500px;
+    padding-right: 500px;
+}
+
+h2 {
+    text-align: center;
+}
+
+a.create {
+    float: right;
+    font-size: 25px;
+}
+
+a.edit {
+    float: right;
+}
+
+table {
+    margin: 0 auto;
+    width: 100%;
+    font-size: 25px;
+}
+
+input {
+    width: 40%;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 25px;
+    display: block;
+    margin-bottom: 25px;
+}
+
+input.edit {
+    width: 35%;
+}
+
+td {
+    padding: 3px 5px 3px 10px;
+}
+
+button {
+    width: 35%;
+    padding: 10px;
+    font-size: 25px;
+    margin: 0 auto;
+    display: block;
+    margin-bottom: 25px;
+}
+
+a.return {
+    text-align: center;
+    display: block;
+    font-size: 25px;
+}
