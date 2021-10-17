@@ -13,11 +13,11 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-//Route::get('/', function () {
-//    return view('welcome');
-//});
+Route::get('/', function () {
+    return view('welcome');
+});
 
-Route::get('/', 'App\Http\Controllers\UserdataController@index')->name('userdata.list'); 
+Route::get('/userdata', 'App\Http\Controllers\UserdataController@index')->name('userdata.list'); 
 Route::get('create', 'App\Http\Controllers\UserdataController@create')->name('userdata.create');
 Route::post('store', 'App\Http\Controllers\UserdataController@store')->name('userdata.store');
 Route::get('edit/{id}', 'App\Http\Controllers\UserdataController@edit')->name('userdata.edit');
