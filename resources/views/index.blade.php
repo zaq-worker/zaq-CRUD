@@ -7,10 +7,12 @@
     </head>
     <body>
         <h2></h2>
-        
-        <table border="1">
+        <table>
             <tr>
-                <a class=create href="{{ route('userdata.create') }}">{{ __('>>登録') }}</a>
+                <td class=create></td>
+                <td class=create></td>
+                <td class=create></td>
+                <td class=create><a href="{{ route('userdata.create') }}">{{ __('>>登録') }}</a></td>
             </tr>
             <tr>
                 <th>名前</th>
