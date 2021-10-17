@@ -14,7 +14,7 @@
                 <th>電話番号</th>
                 <th>メールアドレス</th>
                 <th></th>
-            </tr>@foreach($userdatas as $userdata)
+            </tr>@foreach($Userdatas as $userdata)
             <tr>
                 <td>{{$userdata->name}}</td>
                 <td>{{$userdata->telephone}}</td>

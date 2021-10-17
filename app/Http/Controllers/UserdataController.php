@@ -15,7 +15,7 @@ class UserdataController extends Controller
     public function index()
     {
         $userdata = Userdata::all();
-        return view('index', ['userdatas' => $userdata]);
+        return view('index', ['Userdatas' => $userdata]);
     }
 
     /**
