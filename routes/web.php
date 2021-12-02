@@ -13,8 +13,8 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/userdata', function () {
-    return view('index');
+Route::get('/', function () {
+    return view('userdata');
 });
 
 Route::get('/userdata', 'App\Http\Controllers\UserdataController@index')->name('userdata.list'); 
