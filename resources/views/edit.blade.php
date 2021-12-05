@@ -22,22 +22,22 @@
                     <div class="col-md-12">
                         <div class="well">
                             <div class="d-flex align-items-center justify-content-center">
-                                <form method="POST" action="{{route('userdata.update',['id' =>$userdata->id])}}" class="col-sm-10 col-md-7 col-lg-6">@csrf
-                                        <div class="mb-3">
-                                            <label for="form-name" class="form-label">名前</label>
-                                            <input type="form-text" class="form-control" name="name" value="{{$userdata->name}}">
-                                            <label for="form-tel">電話番号</label>
-                                            <input type="form-tel" class="form-control" name="telephone" value="{{$userdata->telephone}}">
-                                            <label for="form-email">メールアドレス</label>
-                                            <input type="form-email" class="form-control" name="email" value="{{$userdata->email}}">
-                                            <p class="d-flex align-items-center justify-content-center"><input type="submit" class="btn btn-primary" value="編集"></p>
+                                <form method="POST" action="{{route('userdata.update',['id' =>$userdata->id])}}" class="col-sm-10 col-md-7 col-lg-6 justify-content-center">@csrf
+                                        <div class="mb-2">
+                                            <label for="name" class="form-label">名前</label>
+                                            <input type="text" class="form-control" name="name" value="{{$userdata->name}}">
+                                            <label for="tell">電話番号</label>
+                                            <input type="tell" class="form-control" name="telephone" value="{{$userdata->telephone}}">
+                                            <label for="email">メールアドレス</label>
+                                            <input type="email" class="form-control" name="email" value="{{$userdata->email}}">
+                                            <p class="text-center"><input type="submit" class="btn btn-primary mt-2" value="編集"></p>
                                         </div>
-                                    <form method="POST" action="{{route('userdata.destroy',['id'=>$userdata->id])}}">@csrf
-                                        <p class="mb-3 d-flex align-items-center justify-content-center"><button type="submit" class="btn btn-primary">削除</button></p>
-                                        <p class="d-flex align-items-center justify-content-center"><a class="d-flex align-items-center justify-content-center" href="{{route('userdata.list')}}">{{ __('一覧に戻る') }}</a></p>
-                                    </form>
-                                </form>
                             </div>
+                                </form>
+                                    <form method="POST" action="{{route('userdata.destroy',['id' =>$userdata->id])}}">@csrf
+                                        <p class="mb-3 text-center"><button type="submit" class="btn btn-primary">削除</button></p>
+                                        <p class="text-center"><a href="{{route('userdata.list')}}">{{ __('一覧に戻る') }}</a></p>
+                                    </form>
                         </div>
                     </div>
                 </div>
