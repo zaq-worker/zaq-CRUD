@@ -45,7 +45,7 @@ class UserdataController extends Controller
         $userdata->save();
     
         //一覧表示画面にリダイレクト
-        return redirect('userdata');
+        return redirect('/');
     }
 
     /**
@@ -69,7 +69,7 @@ class UserdataController extends Controller
     {
         $userdata=Userdata::find($id);
         
-    return view('edit', compact('userdata'));
+    return view('edit', compact('/'));
     }
 
     /**
@@ -91,7 +91,7 @@ class UserdataController extends Controller
     $userdata->save();
 
     //処理が終わったらindexにリダイレクト
-    return redirect('userdata');
+    return redirect('/');
     }
 
     /**
@@ -106,6 +106,6 @@ class UserdataController extends Controller
 
     $userdata->delete();
 
-    return redirect('userdata');
+    return redirect('/');
     }
 }
