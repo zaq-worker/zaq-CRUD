@@ -21,5 +21,5 @@ Route::get('/', 'App\Http\Controllers\UserdataController@index')->name('userdata
 Route::get('create', 'App\Http\Controllers\UserdataController@create')->name('userdata.create');
 Route::post('store', 'App\Http\Controllers\UserdataController@store')->name('userdata.store');
 Route::get('edit/{id}', 'App\Http\Controllers\UserdataController@edit')->name('userdata.edit');
-Route::post('update/{id}', 'App\Http\Controllers\UserdataController@update')->name('userdata.update');
+Route::post('/{id}', 'App\Http\Controllers\UserdataController@update')->name('userdata.update');
 Route::post('destroy/{id}', 'App\Http\Controllers\UserdataController@destroy')->name('userdata.destroy');
