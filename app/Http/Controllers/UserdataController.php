@@ -69,7 +69,7 @@ class UserdataController extends Controller
     {
         $userdata=Userdata::find($id);
         
-    return view('edit', compact('userdate'));
+    return view('edit', compact('userdata'));
     }
 
     /**
