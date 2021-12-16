@@ -43,8 +43,8 @@
                 </div>
             </div>
         </div>
-        <hr/>
-        <footer>
+        <footer class="position:absolute; bottom:0;">
+            <hr/>
             <div class="container-fluid text-center">
                 <p class="help-block"> ©CRUD.com 2021 </p>
             </div>
