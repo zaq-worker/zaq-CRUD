@@ -45,7 +45,7 @@
                 </div>
             </div>
         </div>
-        <footer style="position:absolute; bottom:0; width: 100%;">
+        <footer style="position:absolute; bottom:0; width: 100%; background-color: white;">
             <hr/>
             <div class="container-fluid text-center">
                 <p class="help-block"> ©CRUD.com 2021 </p>
