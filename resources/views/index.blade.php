@@ -24,20 +24,22 @@
                                     <p class="col-sm-12 col-md-10 col-lg-7 container text-right">
                                         <a href="{{ route('userdata.create') }}">{{ __('>>登録') }}</a>
                                     </p>
-                            <table class="table table-bordered table-responsive col-sm-12 col-md-10 col-lg-7 container-fluid text-center">
-                                <tr>  
-                                    <th>名前</th>
-                                    <th>電話番号</th>
-                                    <th>メールアドレス</th>
-                                    <th></th>
-                                </tr>@foreach($userdatas as $userdata)
-                                <tr>
-                                    <td>{{$userdata->name}}</td>
-                                    <td>{{$userdata->telephone}}</td>
-                                    <td>{{$userdata->email}}</td>
-                                    <td><a href='{{route("userdata.edit",["id" => $userdata->id]) }}'>{{ __('>>編集') }}</a></td>
-                                </tr>@endforeach
-                            </table>
+                            <div class="table-responsive">
+                                <table class="table table-bordered col-sm-12 col-md-10 col-lg-7 container-fluid text-center">
+                                    <tr>  
+                                        <th>名前</th>
+                                        <th>電話番号</th>
+                                        <th>メールアドレス</th>
+                                        <th></th>
+                                    </tr>@foreach($userdatas as $userdata)
+                                    <tr>
+                                        <td>{{$userdata->name}}</td>
+                                        <td>{{$userdata->telephone}}</td>
+                                        <td>{{$userdata->email}}</td>
+                                        <td><a href='{{route("userdata.edit",["id" => $userdata->id]) }}'>{{ __('>>編集') }}</a></td>
+                                    </tr>@endforeach
+                                </table>
+                            </div>
                         </div>
                     </div>
                 </div>
